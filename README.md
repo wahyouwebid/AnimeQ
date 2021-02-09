@@ -1,4 +1,4 @@
-# Project Title
+# AnimeQ
 
 Youtube Trends merupakan aplikasi Submission dari Menjadi Android Developer Expert
 
