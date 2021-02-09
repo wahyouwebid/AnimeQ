@@ -1,1 +1,1 @@
-[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
+[![wahyouwebid](https://circleci.com/gh/wahyouwebid/AnimeQ.svg?style=svg)](https://circleci.com/gh/wahyouwebid/AnimeQ)
