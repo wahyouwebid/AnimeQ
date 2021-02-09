@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.anime.AnimeFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/shp_white_top_16dp">
+
+                <View
+                    android:id="@+id/topDecor"
+                    android:layout_width="32dp"
+                    android:layout_height="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/shp_circle_grey" />
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/search"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:background="@drawable/shp_background_search"
+                        android:orientation="horizontal"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/imgFavorite"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_38"
+                            android:layout_height="@dimen/size_38"
+                            android:layout_marginStart="4dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_info_24"
+                            android:contentDescription="@string/title_content_des_info"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_38"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="@string/title_welcome"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgFavorite"
+                        android:layout_width="@dimen/size_38"
+                        android:layout_height="@dimen/size_38"
+                        android:background="@drawable/shp_circle_primary"
+                        android:padding="@dimen/padding_8"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:src="@drawable/ic_baseline_favorite_24"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white"
+                        android:contentDescription="@string/title_content_des_img_favo"/>
+
+                    <View
+                        android:id="@+id/viewAnime"
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="@dimen/spacing_mxxlarge"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_anime"
+                        android:layout_marginTop="@dimen/margin_24"
+                        android:layout_marginStart="@dimen/margin_8"
+                        android:textSize="@dimen/font_20"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintStart_toEndOf="@+id/viewAnime"
+                        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAnime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginStart="@dimen/margin_16"
+                        app:layout_constraintTop_toBottomOf="@+id/viewAnime" />
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/pgAnime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/viewAnime">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <include layout="@layout/placeholder_anime" />
+                                <include layout="@layout/placeholder_anime" />
+                                <include layout="@layout/placeholder_anime" />
+                                <include layout="@layout/placeholder_anime" />
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

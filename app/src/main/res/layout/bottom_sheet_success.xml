@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_16"
+    android:background="@drawable/shp_white_top_16dp">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/topDecor"
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shp_circle_grey" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgError"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_100"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_check_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:contentDescription="@string/title_content_des_success"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_success"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="@+id/imgError"
+        app:layout_constraintStart_toStartOf="@+id/imgError"
+        app:layout_constraintTop_toBottomOf="@+id/imgError"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/tvErrorContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/title_success_content"
+        app:layout_constraintEnd_toEndOf="@+id/tvError"
+        app:layout_constraintStart_toStartOf="@+id/tvError"
+        app:layout_constraintTop_toBottomOf="@+id/tvError"  />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_success_ok"
+        android:layout_margin="@dimen/margin_16"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_rounded_primary"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AnimeQ</string>
+    <string name="title_tab_anime">Anime</string>
+    <string name="title_tab_manga">Manga</string>
+    <string name="title_welcome">Welcome to AnimeQ</string>
+    <string name="title_trending">Trending</string>
+    <string name="title_manga">Recommendations</string>
+    <string name="title_trending_anime">Trending Anime</string>
+    <string name="title_anime">Recommendations</string>
+    <string name="title_detail">Detail</string>
+    <string name="title_favorite_anime">Anime Favorite</string>
+    <string name="title_favorite_manga">Anime Favorite</string>
+    <string name="title_information">Information</string>
+    <string name="title_synopsis">Synopsis</string>
+    <string name="title_add_favorite">Add To Favorite</string>
+    <string name="title_watch_trailer">Watch Trailer</string>
+    <string name="title_error">Terjadi Kesalahan</string>
+    <string name="title_error_content">Silahkan coba lagi atau hubungi kontak pengembang</string>
+    <string name="title_error_ok">Oke, Saya mengerti</string>
+
+    <string name="title_success">Success</string>
+    <string name="title_success_content">Berhasil menambahkan ke dalam favorite</string>
+    <string name="title_success_ok">Lihat Daftar Favorite</string>
+    <string name="title_favorite">favorite</string>
+    <string name="title_powered_by">Powered by Dicoding</string>
+
+    <string name="title_content_des_img_back">Back</string>
+    <string name="title_content_des_img_play_video">Play Video</string>
+    <string name="title_content_des_img_cover_anime">Cover Image Anime</string>
+    <string name="title_content_des_img_poster_anime">Poster Image Anime</string>
+    <string name="title_content_des_img_poster_manga">Poster Image Manga</string>
+    <string name="title_content_des_img_bg">Image background</string>
+    <string name="title_content_des_info">Image Info</string>
+    <string name="title_content_des_success">Image Info Success</string>
+    <string name="title_content_des_img_favo">Image Info Success</string>
+    <string name="title_content_des_img_tab_icon">Image Tab Icon</string>
+</resources>

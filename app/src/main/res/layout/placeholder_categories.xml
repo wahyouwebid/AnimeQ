@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_16">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_45"
+        android:layout_marginStart="@dimen/margin_16"
+        android:background="@drawable/bg_placeholder_chips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/size_140"
+        android:layout_height="@dimen/size_45"
+        android:background="@drawable/bg_placeholder_chips"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_45"
+        android:background="@drawable/bg_placeholder_chips"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="@dimen/size_180"
+        android:layout_height="@dimen/size_45"
+        android:background="@drawable/bg_placeholder_chips"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_45"
+        android:background="@drawable/bg_placeholder_chips"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintStart_toEndOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="@dimen/size_120"
+        android:layout_height="@dimen/size_45"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/bg_placeholder_chips"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintStart_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
