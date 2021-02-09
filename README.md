@@ -1,6 +1,6 @@
 # AnimeQ
 
-Youtube Trends merupakan aplikasi Submission dari Menjadi Android Developer Expert
+AnimeQ merupakan aplikasi Submission dari Menjadi Android Developer Expert
 
 
 ### Continuous Integration
