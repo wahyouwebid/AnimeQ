@@ -1,0 +1,37 @@
+version: 2.1
+ 
+orbs:
+  android: circleci/android@0.2.1
+ 
+jobs:
+  build:
+    executor: android/android
+    steps:
+      - checkout
+      - restore_cache:
+          key: android-orb-v1-
+      - run:
+          name: Chmod permissions
+          command: sudo chmod +x ./gradlew
+      - run:
+          name: Download Dependencies
+          command: ./gradlew androidDependencies
+      - save_cache:
+          key: 'android-orb-v1-{{ epoch }}'
+          paths:
+            - ~/.android/build-cache
+            - ~/.android/cache
+      - run:
+          name: Run Build
+          command: ./gradlew build
+      - store_artifacts: 
+          path: app/build/reports
+          destination: reports
+      - run:
+          name: Run Tests
+          command: ./gradlew lint test
+      - store_test_results:
+          path: app/build/test-results
+      - store_artifacts:  
+          path: app/build/outputs/apk/debug/
+          destination: artifact-file
