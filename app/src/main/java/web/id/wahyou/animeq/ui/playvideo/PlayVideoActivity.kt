@@ -24,7 +24,6 @@ class PlayVideoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         setupPlayer()
-        setupWindowManager()
     }
 
     private fun setupPlayer() {
@@ -50,15 +49,7 @@ class PlayVideoActivity : AppCompatActivity() {
                     }
                 })
                 it.enableBackgroundPlayback(true)
-
             }
         }
-    }
-
-    private fun setupWindowManager() {
-        window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
     }
 }
