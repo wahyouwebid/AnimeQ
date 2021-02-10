@@ -21,16 +21,3 @@ fun formatDate(date: String?): String{
     val dateParse = inputFormat.parse(date!!)
     return outputFormat.format(dateParse!!)
 }
-
-fun errorDialogActivty(activity: Activity, context: Context) {
-    val binding = BottomSheetBinding.inflate(activity.layoutInflater)
-    val dialog = BottomSheetDialog(context)
-    dialog.setContentView(binding.root)
-    with(binding) {
-        btnOk.setOnClickListener {
-            dialog.dismiss()
-        }
-    }
-
-    dialog.show()
-}
