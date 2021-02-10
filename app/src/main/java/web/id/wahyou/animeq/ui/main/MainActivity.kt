@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         binding.pager.setCurrentItem(0, true)
     }
 
-    private fun getTabLayout(title: String, icon: Int): View? {
+    private fun getTabLayout(title: String, icon: Int): View {
         val tabBinding = TabLayoutBinding.inflate(layoutInflater)
         tabBinding.title.text = title
         tabBinding.icon.setImageResource(icon)

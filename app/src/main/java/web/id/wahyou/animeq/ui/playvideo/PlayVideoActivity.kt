@@ -2,7 +2,6 @@ package web.id.wahyou.animeq.ui.playvideo
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
-import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer

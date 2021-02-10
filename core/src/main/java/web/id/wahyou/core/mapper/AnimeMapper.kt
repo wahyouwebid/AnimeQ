@@ -73,28 +73,4 @@ object AnimeMapper {
             isFavorite = input.isFavorite
     )
 
-    fun mapResponsesToDomain(input: List<DataAnime>): List<Anime> {
-        val data = ArrayList<Anime>()
-        input.map {
-            val anime = Anime(
-                    id = it.id,
-                    canonicalTitle = it.attributes.canonicalTitle,
-                    averageRating = it.attributes.averageRating,
-                    synopsis = it.attributes.synopsis,
-                    posterImage = it.attributes.posterImage.medium,
-                    coverImage = checkNullCoverImage(it.attributes.coverImage),
-                    youtubeVideoId = checkNullString(it.attributes.youtubeVideoId),
-                    episodeCount = it.attributes.episodeCount,
-                    startDate =  it.attributes.startDate,
-                    status = it.attributes.status,
-                    subtype = it.attributes.subtype,
-                    totalDuration = it.attributes.totalLength,
-                    type = it.type,
-                    userCount = it.attributes.userCount,
-                    isFavorite = false
-            )
-            data.add(anime)
-        }
-        return data
-    }
 }

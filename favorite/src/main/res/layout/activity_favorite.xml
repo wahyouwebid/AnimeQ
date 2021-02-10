@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_baseline_arrow_back_24"
-                app:tint="@color/white" />
+                app:tint="@color/white"
+                android:contentDescription="@string/title_content_des_img_back" />
 
             <TextView
                 android:id="@+id/tvTitleToolbar"

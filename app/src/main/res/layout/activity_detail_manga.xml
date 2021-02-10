@@ -339,6 +339,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ic_baseline_favorite_border_24"
-        android:tint="@color/white"/>
+        android:tint="@color/white"
+        android:contentDescription="@string/title_content_des_img_favo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

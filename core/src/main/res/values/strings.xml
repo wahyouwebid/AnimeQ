@@ -1,1 +1,14 @@
-<resources></resources>
+<resources>
+    <string name="title_anime">Anime</string>
+    <string name="title_manga">Manga</string>
+    <string name="title_content_des_img_back">Back</string>
+    <string name="title_content_des_img_play_video">Play Video</string>
+    <string name="title_content_des_img_cover_anime">Cover Image Anime</string>
+    <string name="title_content_des_img_poster_anime">Poster Image Anime</string>
+    <string name="title_content_des_img_poster_manga">Poster Image Manga</string>
+    <string name="title_content_des_img_bg">Image background</string>
+    <string name="title_content_des_info">Image Info</string>
+    <string name="title_content_des_success">Image Info Success</string>
+    <string name="title_content_des_img_favo">Image Info Success</string>
+    <string name="title_content_des_img_tab_icon">Image Tab Icon</string>
+</resources>

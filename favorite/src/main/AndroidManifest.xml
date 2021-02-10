@@ -14,7 +14,7 @@
     </dist:module>
 
     <application>
-        <activity android:name=".manga.MangaFavoriteActivity"></activity>
+        <activity android:name=".manga.MangaFavoriteActivity" />
         <activity android:name=".anime.AnimeFavoriteActivity" />
     </application>
 

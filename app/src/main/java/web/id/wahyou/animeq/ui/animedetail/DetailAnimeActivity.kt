@@ -123,7 +123,7 @@ class DetailAnimeActivity : AppCompatActivity() {
             btnOk.setOnClickListener {
                 try {
                     startActivity(
-                        android.content.Intent(
+                        Intent(
                             this@DetailAnimeActivity,
                             Class.forName("web.id.wahyou.favorite.anime.AnimeFavoriteActivity")
                         )

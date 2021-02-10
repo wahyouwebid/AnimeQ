@@ -1,12 +1,8 @@
 package web.id.wahyou.animeq.utils
 
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.content.Context
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import web.id.wahyou.animeq.databinding.BottomSheetBinding
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 

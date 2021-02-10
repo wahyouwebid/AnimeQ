@@ -3,8 +3,6 @@ package web.id.wahyou.animeq.ui.splash
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.view.WindowInsets
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import web.id.wahyou.animeq.databinding.ActivitySplashBinding
 import web.id.wahyou.animeq.ui.main.MainActivity

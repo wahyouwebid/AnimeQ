@@ -3,17 +3,13 @@
     <string name="title_tab_anime">Anime</string>
     <string name="title_tab_manga">Manga</string>
     <string name="title_welcome">Welcome to AnimeQ</string>
-    <string name="title_trending">Trending</string>
     <string name="title_manga">Recommendations</string>
-    <string name="title_trending_anime">Trending Anime</string>
     <string name="title_anime">Recommendations</string>
     <string name="title_detail">Detail</string>
     <string name="title_favorite_anime">Anime Favorite</string>
     <string name="title_favorite_manga">Anime Favorite</string>
     <string name="title_information">Information</string>
     <string name="title_synopsis">Synopsis</string>
-    <string name="title_add_favorite">Add To Favorite</string>
-    <string name="title_watch_trailer">Watch Trailer</string>
     <string name="title_error">Terjadi Kesalahan</string>
     <string name="title_error_content">Silahkan coba lagi atau hubungi kontak pengembang</string>
     <string name="title_error_ok">Oke, Saya mengerti</string>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".ui.animedetail.DetailAnimeActivity">
+    tools:context=".ui.animedetail.DetailAnimeActivity"
+    tools:ignore="Overdraw">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -80,7 +81,8 @@
                         android:id="@+id/imgCoverSmall"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/title_content_des_img_poster_anime" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -118,7 +120,8 @@
                     android:tint="@color/white"
                     app:layout_constraintBottom_toBottomOf="@+id/cvSmall"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/cvSmall" />
+                    app:layout_constraintTop_toTopOf="@+id/cvSmall"
+                    android:contentDescription="@string/title_content_des_img_favo" />
 
                 <View
                     android:id="@+id/viewDetail"

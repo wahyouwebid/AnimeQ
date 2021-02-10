@@ -25,7 +25,8 @@
             android:background="@color/grey"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/title_content_des_img_poster_anime" />
 
     </androidx.cardview.widget.CardView>
 
@@ -40,7 +41,6 @@
         android:paddingEnd="@dimen/padding_16"
         android:paddingBottom="@dimen/padding_4"
         android:layout_marginStart="@dimen/margin_16"
-        android:text="Anime"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,10 +55,10 @@
         android:textSize="@dimen/font_20"
         android:textStyle="bold"
         android:layout_marginStart="@dimen/margin_16"
+        tools:text="@string/title_anime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/tvType"
-        tools:text="One Punch Man 2nd Season 3434" />
+        app:layout_constraintTop_toBottomOf="@+id/tvType"  />
 
     <TextView
         android:id="@+id/tvTotalEpisode"
