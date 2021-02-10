@@ -21,9 +21,9 @@ android {
     }
 
     lintOptions {
+        tasks.lint.enabled = false
+        checkReleaseBuilds false
         abortOnError false
-        quiet true
-        ignoreWarnings true
     }
 
     buildTypes {
