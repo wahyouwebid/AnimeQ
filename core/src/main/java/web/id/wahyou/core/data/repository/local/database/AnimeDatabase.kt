@@ -8,7 +8,7 @@ import web.id.wahyou.core.data.repository.local.entity.MangaEntity
 
 @Database(entities = [
     AnimeEntity::class,
-    MangaEntity::class], version = 1, exportSchema = false
+    MangaEntity::class], version = 2, exportSchema = false
 )
 
 abstract class AnimeDatabase : RoomDatabase() {

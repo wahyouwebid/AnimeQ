@@ -47,6 +47,13 @@ dependencies {
     //Youtube Player
     implementation "com.pierfrancescosoffritti.androidyoutubeplayer:core:$youtubeVersion"
 
+    //Leak Canary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakCanary"
+
+    //Enkripsi Database
+    implementation "net.zetetic:android-database-sqlcipher:$sqlCipher"
+    implementation "androidx.sqlite:sqlite-ktx:$sqlite"
+
     //test
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$androidx_junit_version"

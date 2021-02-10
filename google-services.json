@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "361081402601",
+    "project_id": "animeq-app",
+    "storage_bucket": "animeq-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361081402601:android:14edd3709c7d7a2f9d2c78",
+        "android_client_info": {
+          "package_name": "web.id.wahyou.animeq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361081402601-o82rgg0fcikbclj7e4ejt8oi7hlai68t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "web.id.wahyou.animeq",
+            "certificate_hash": "7af9415df795e465fc338fff9f51b1ba99591c76"
+          }
+        },
+        {
+          "client_id": "361081402601-pt4p4aul6cqoq56socuhdlp679n97gj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqCnUpz6QuKKPIENuKovAR_gwgWlzmZxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361081402601-pt4p4aul6cqoq56socuhdlp679n97gj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

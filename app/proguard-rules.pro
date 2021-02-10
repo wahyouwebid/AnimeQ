@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Supaya line number tetep ada saat di debugging
+-keepattributes SourceFile,LineNumberTable
+
+# Gunakan ini untuk mengganti nama file
+-renamesourcefileattribute SourceFile
