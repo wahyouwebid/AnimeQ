@@ -13,7 +13,7 @@
         <dist:fusing dist:include="true" />
     </dist:module>
 
-    <application>
+    <application android:fullBackupContent="@xml/backup_descriptor">
         <activity android:name=".manga.MangaFavoriteActivity" />
         <activity android:name=".anime.AnimeFavoriteActivity" />
     </application>
