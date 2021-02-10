@@ -27,6 +27,7 @@ buildscript {
     ext.leakCanary ="2.4"
     ext.sqlCipher ="4.4.0"
     ext.sqlite ="2.1.0"
+    ext.firebaseBom ="26.4.0"
 
     repositories {
         google()
@@ -36,6 +37,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.5'
     }
 }
 
