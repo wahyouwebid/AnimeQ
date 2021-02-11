@@ -59,12 +59,7 @@ class AnimeFragment : Fragment() {
             imgFavorite.also {
                 imgFavorite.setOnClickListener {
                     try {
-                        startActivity(
-                            Intent(
-                                requireContext(),
-                                Class.forName("web.id.wahyou.favorite.anime.AnimeFavoriteActivity")
-                            )
-                        )
+                        startActivity(Intent(requireContext(), Class.forName("web.id.wahyou.favorite.anime.AnimeFavoriteActivity")))
                     } catch (e: Exception) {
                         e.printStackTrace()
                         Toast.makeText(
