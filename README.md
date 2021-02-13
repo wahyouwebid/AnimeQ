@@ -5,6 +5,7 @@ AnimeQ merupakan aplikasi Project Submission Dicoding dari Kelas Menjadi Android
 
 ### Continuous Integration
 ![AnimeQ CI](https://github.com/wahyouwebid/AnimeQ/workflows/AnimeQ%20CI/badge.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9d2ec0db5e8469fbad0daafadecd2b8)](https://app.codacy.com/gh/wahyouwebid/AnimeQ?utm_source=github.com&utm_medium=referral&utm_content=wahyouwebid/AnimeQ&utm_campaign=Badge_Grade_Settings)
 [![wahyouwebid](https://circleci.com/gh/wahyouwebid/AnimeQ.svg?style=shield)](https://circleci.com/gh/wahyouwebid/AnimeQ)
 
 ### Code Quality
